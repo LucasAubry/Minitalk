@@ -74,8 +74,8 @@ int	main(int argc, char **argv)
 {
 	static const struct sigaction	act = (struct sigaction)
 	{.sa_sigaction = recup, .sa_flags = SA_SIGINFO};
-	(void)argv;
 
+	(void)argv;
 	if (argc != 1)
 	{
 		ft_printf("pas d'arguments autorises");

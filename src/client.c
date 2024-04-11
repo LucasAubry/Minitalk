@@ -55,13 +55,13 @@ void	recup(int signal)
 
 int	main(int argc, char **argv)
 {
-	int	pid;
-	int	i;
+	int								pid;
+	int								i;
+	static const struct sigaction	act = (struct sigaction)
+	{.sa_handler = recup};
 
 	pid = 0;
 	i = 0;
-	static const struct sigaction	act = (struct sigaction)
-	{ .sa_handler = recup};
 	sigaction(SIGUSR1, &act, NULL);
 	if (argc == 3)
 	{
@@ -76,9 +76,6 @@ int	main(int argc, char **argv)
 		}
 	}
 	else
-	{
 		ft_printf("les arguments sont pas bon");
-		return (1);
-	}
 	return (0);
 }
