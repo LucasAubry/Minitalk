@@ -3,8 +3,8 @@
 CC =		cc
 CFLAGS	=	-Wall -Wextra -Werror -Iinclude -g -O0
 
-LFLAGS = -Llib -lft -ldl -lglfw
-
+LFLAGS = -Llib -lft -ldl
+#-L/opt/homebrew/lib 
 CLIENT = client
 SERVER = server
 #------------------------Source-----------------------------
