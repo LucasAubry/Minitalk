@@ -10,8 +10,8 @@ SERVER = server
 #------------------------Source-----------------------------
 
 # Files
-
 LIB = lib/libft.a
+
 
 # Sources and objects
 FILES_S = server 
@@ -34,8 +34,10 @@ endef
 
 #------------------------Rules------------------------------
 
+all:	obj $(CLIENT) $(SERVER)
 
-all:	$(CLIENT) $(SERVER)
+obj:
+	mkdir -p obj
 
 $(CLIENT): $(LIB) $(OBJS_C)
 		@$(call generate_random_color, $(CC) $(CFLAGS) -o $@ $(OBJS_C) $(LFLAGS) $(LIB))
@@ -60,6 +62,7 @@ fclean:	clean
 		rm -f $(CLIENT) $(SERVER)
 		rm -f lib/libft.a
 		make fclean -C lib/Libft
+		rm -rf obj
 
 .c.o:
 		$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
