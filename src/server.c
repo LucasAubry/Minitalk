@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 17:36:50 by Laubry            #+#    #+#             */
-/*   Updated: 2024/04/10 09:36:59 by laubry           ###   ########.fr       */
+/*   Updated: 2024/04/12 14:06:13 by lucasaubry       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int	main(int argc, char **argv)
 	sigaction(SIGUSR2, &act, NULL);
 	while (1)
 	{
-		pause ();
+		usleep(100);
 	}
 	return (0);
 }

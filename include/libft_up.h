@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   libft_up.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
+/*   By: lucasaubry <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 14:10:27 by Laubry            #+#    #+#             */
-/*   Updated: 2024/04/11 12:38:59 by lucasaubry       ###   ########.fr       */
+/*   Created: 2024/04/11 18:28:05 by lucasaubry        #+#    #+#             */
+/*   Updated: 2024/04/11 18:36:53 by lucasaubry       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITSMYLIB_H
-# define ITSMYLIB_H
+#ifndef LIBFT_UP_H
+# define LIBFT_UP_H
 
 # include <stdlib.h>
 # include <unistd.h>

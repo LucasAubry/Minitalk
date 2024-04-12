@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 17:36:02 by Laubry            #+#    #+#             */
-/*   Updated: 2024/04/10 09:27:30 by laubry           ###   ########.fr       */
+/*   Updated: 2024/04/12 14:00:25 by lucasaubry       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ void	len_of_bits(char **argv, int pid)
 		else
 			kill(pid, SIGUSR2);
 		bit++;
-		pause();
-		usleep(5);
+		usleep(500);
 	}
 }
 
@@ -44,7 +43,7 @@ void	send_bit(int pid, char x)
 			kill(pid, SIGUSR2);
 		bit++;
 		pause();
-		usleep(5);
+		usleep(500);
 	}
 }
 
